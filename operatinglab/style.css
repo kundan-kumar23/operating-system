@@ -1,0 +1,447 @@
+body{
+    margin:0px;
+}
+
+/*body-header*/
+
+#body-header
+{
+    height:65vh;
+    background-image:url("macbook_mouse.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/*horizontal-list*/
+
+.horizontal-list
+{
+    padding-left:0px;
+    list-style:none;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display:inline-block;
+    margin:0px 8px 8px 0px;
+}
+
+.horizontal-list li a{
+    color:white;
+    text-decoration:none;
+    
+}
+
+.nav-menu
+{
+    transition:color 0.5s , border-bottom 4s;
+}
+
+.nav-menu li a:hover
+{
+    color:lightgray;
+    border-bottom: 1px solid white;
+}
+
+.text-center
+{
+    text-align:center;
+}
+
+#name-social-container
+{
+    margin-top:20vh;
+}
+
+#my-name
+{
+    font-size:5rem;
+    letter-spacing:0.1rem;
+    color:white;
+    font-weight:700;
+    margin-bottom:0.5rem;
+}
+
+.social-icons li a i
+{
+    padding:10px;
+    font-size:1rem;
+    border-radius:50%;
+}
+
+.social-icons li a i:hover
+{
+   box-shadow:0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+
+#about
+{
+    height:auto;
+    width:100%;
+    position:relative;
+}
+
+#my-image
+{
+    height:12rem;
+    width:12rem;
+    margin:auto;
+    border-radius:50%;
+    margin-top:4vh;
+    box-shadow:0px 0px 6px 4px  skyblue;
+}
+
+#my-image img{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+}
+
+.description
+{
+   
+    display:flex;
+    margin-top:25px;
+   
+}
+
+.right-space
+{
+    width:45%;
+}
+
+
+
+.description p{
+    padding:0px 10px 10px 10px;
+    font-family:sans-serif;
+    color:rgba(0, 0, 0, 0.726);
+    font-weight: 700;
+    width:90%;
+}
+
+.left-space
+{
+    width:45%;
+}
+
+section{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.section-heading{
+    width:auto;
+    padding:20px 10px 10px;
+   
+    font-weight:400;
+    display:flex;
+    align-items:center;
+}
+
+.section-heading span
+{
+   font-size:40px;
+   color:#2857a4;
+   display:inline-block;
+   padding-top:10px;
+   margin-right:0.5rem; 
+   
+}
+
+section:target{
+    background-color:cyan;
+}
+
+.skill-display
+{
+  width:40%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+}
+
+.skill-progress
+{
+    width:7rem;
+    height:1.4rem;
+    background-color:lightgrey;
+    border-radius:0.8rem;
+    margin-top:40px;
+  
+}
+
+.skill-progress>div
+{
+    border-radius:20px 0px 0px 20px; 
+}
+
+
+
+
+.skill-name span
+{
+     color:white;
+     font-size: 1rem;
+     margin-left:10px;
+}
+
+.skill-name
+{
+    display:flex;
+   justify-content:center;
+   padding-top:2px;
+}
+
+
+/*percentage classes*/
+
+.mb-blue
+{
+    background-color:rgb(0, 0, 102);
+}
+
+.fifty-percent
+{
+ width:50%;
+ height:inherit;
+}
+
+.mb-orangered
+{
+    background-color:rgb(255, 68, 0);
+}
+
+.ninty-percent
+{
+    width:90%;
+    height:inherit;
+}
+
+.mb-green
+{
+    background-color:green;
+}
+
+.eighty-percent
+{
+    width:80%;
+    height:inherit;
+}
+
+.mb-pink
+{
+    background-color:rgb(172, 7, 34);
+}
+
+.eighty-five-percent
+{
+    width:85%;
+    height:inherit;
+}
+
+.mb-golden
+{
+    background-color:goldenrod;
+}
+
+.eighty-five-percent
+{
+    width:80%;
+    height:inherit;
+}
+
+.mb-violet
+{
+    background-color:rgb(15, 1, 15);
+}
+
+.fivty-five-percent{
+    width:50%;
+    height:inherit;
+}
+
+/*timeline*/
+
+.timeline
+{
+    position:relative;
+    width:75%;
+    
+}
+
+.timeline-box
+{
+    position:relative;
+    width:40%;
+    left:5%;
+    min-height:150px;
+    margin:5px;
+}
+
+.timeline-box:nth-child(2n)
+{
+    left:58%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content:'';
+    position:absolute;
+    top:30%;
+    right:-13%;
+    border-radius:50%;
+    width:0.5rem;
+    height:0.5rem;
+    background-color:grey;
+}
+
+.timeline-box:nth-child(2n)::before{
+    content:'';
+    position:absolute;
+    top:30%;
+    right:119.5%;
+    border-radius:50%;
+    width:0.5rem;
+    height:0.5rem;
+    background-color:grey;
+}
+.timeline-divider
+{
+    position:absolute;
+    height:75%;
+    width:0%;
+    border:3px dashed #0096fa6b;
+    top:10%;
+    left:50%;
+
+}
+
+
+.timeline-traveller{
+    position:sticky;
+    top:25%;
+    transform:rotate(90deg);
+    z-index:1;
+}
+
+.timeline-box h3{
+    color:blue;
+    font-family:bold;
+}
+
+.portfolio-section
+{
+    width:75%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+.portfolio-box
+{
+    
+    height:350px;
+    width:30%;
+    margin:5px;
+}
+
+.portfolio-box:hover{
+    border: 2px solid rgb(190, 190, 194);
+    
+}
+
+.portfolio-image
+{
+    height:80%;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+}
+.portfolio-box h3{
+    display:flex;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.contact-detail
+{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+#contact
+{
+    background:linear-gradient(120deg,darkblue,rgb(14, 1, 14));
+   
+}
+
+#contact span
+{
+    
+    color:white;
+}
+
+
+.details p
+{
+ 
+    color:white;
+}
+.details{
+    margin-top:16px;
+   display:flex;
+}
+
+.identy{
+  width:40%;
+  margin-left:100px;
+  margin-top:13px;
+}
+
+.address{
+    margin-top:10px;
+    color:white;
+    width:50%;
+    margin-left:450px;
+}
+.moocs
+{
+      color:blue;
+}
+
+@media screen and (max-width:600px)
+{
+    .timeline-box
+    {
+        left:12% ;
+        width:80%;
+    }
+    .timeline-box:nth-child(2n)
+{
+    left:12%;
+}
+.timeline-divider
+{
+    left:5%;
+}
+.timeline-box:nth-child(2n+1)::after
+{
+    left:-11%;
+}
+
+.timeline-box:nth-child(2n)::before{
+    left:-11%;
+}
+.details
+{
+   margin-left:10%;
+}
+.address
+{
+    margin-top:240px;
+    margin-left:-40%;
+}
+}
